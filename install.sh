@@ -2,9 +2,8 @@
 
 ####################################################################################
 #	rfid client for Raspberry Zero                                             #
-#	9/5/2019                                                                   #
+#	10/5/2019                                                                   #
 ####################################################################################
-
 
 if [ "$(whoami)" != "root" ]; then
 	echo "Run script as ROOT ! (sudo bash install.sh)"
@@ -26,7 +25,7 @@ dpkg-reconfigure locales
 apt-get update -y
 apt-get upgrade -y
 apt-get dist-upgrade -y
-rpi-update -y
+rpi-update
 apt-get install -y git vim python3-pip acl
 pip3 install mysql.connector
 
@@ -34,7 +33,6 @@ apt-get autoremove -y
 apt-get autoclean -y
 
 echo "------------------------------------------------------------------------------"
-echo "                         Installation finished"
+echo " Installation finished"
 echo "------------------------------------------------------------------------------"
-
 reboot
