@@ -2,7 +2,7 @@
 
 ####################################################################################
 #	rfid client for Raspberry Zero                                             #
-#	10/5/2019                                                                  #
+#	29/5/2019                                                                  #
 ####################################################################################
 
 if [ "$(whoami)" != "root" ]; then
@@ -28,6 +28,12 @@ apt-get dist-upgrade -y
 rpi-update
 apt-get install -y git vim python3-pip acl
 pip3 install mysql.connector
+# or
+# https://github.com/PyMySQL/PyMySQL
+pip3 install PyMySQL
+# To use "sha256_password" or "caching_sha2_password" for authenticate, you need to install additional dependency:
+python3 -m pip install PyMySQL[rsa]
+
 
 apt-get autoremove -y
 apt-get autoclean -y
