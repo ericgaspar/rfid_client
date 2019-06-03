@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ####################################################################################
-#	rfid client for Raspberry Zero                                             #
-#	29/5/2019                                                                  #
+#	rfid client for Raspberry Zero                                                 #
+#	31/05/2019                                                                     #
 ####################################################################################
 
 if [ "$(whoami)" != "root" ]; then
@@ -11,7 +11,7 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 echo "------------------------------------------------------------------------------"
-echo " RFID installation"
+echo " RFID CLIENT installation"
 echo "------------------------------------------------------------------------------"
 
 # Solve locales Perl language issue
@@ -28,17 +28,9 @@ apt-get dist-upgrade -y
 rpi-update
 apt-get install -y git vim python3-pip acl
 pip3 install mysql.connector
-# or
-# https://github.com/PyMySQL/PyMySQL
-pip3 install PyMySQL
-# To use "sha256_password" or "caching_sha2_password" for authenticate, you need to install additional dependency:
-python3 -m pip install PyMySQL[rsa]
-
 
 apt-get autoremove -y
 apt-get autoclean -y
 
-echo "------------------------------------------------------------------------------"
-echo " Installation finished"
-echo "------------------------------------------------------------------------------"
-reboot
+#activate SPI and reboot
+raspi-config
