@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
+
 # Version modifiee de la librairie https://github.com/mxgxw/MFRC522-python
 
 from __future__ import print_function

@@ -1,10 +1,9 @@
 # RFID_client
 
-La Raspberry pi Zero avec le module RC522 envoie les UIR des cartes scannées à une base de donnée distante en utilisant le wifi. 
+La Raspberry pi Zero avec le module RC522 envoie les UIR des cartes RFID scannées à une base de donnée MySQL distante via wifi. 
 
-## Branchement de la raspberry Pi Zero
+## Branchement de la Raspberry Pi Zero
 
-Branchement de la Raspberry Pi Zero avec le module RFID RC522.
 
 ```
 Branchez le module RFID aux broches du Raspberry Pi comme ci-dessous.
@@ -53,7 +52,7 @@ git checkout 8cce26b9ee6e69eb041e9d5665944b88688fca68
 sudo python setup.py install
 ```
 
-### Installer SPI-PY MFRC522-python
+### Installer MFRC522-python
 
 ```
 cd ~
@@ -75,11 +74,12 @@ Tuto à écrire.
 
 - Témoins lumineux et sonore du passage de la carte.
 - Écran LCD affichant le nom du propriétaire de la carte.
+- Lancer le script automatiquement au branchement de la carte.
 
 ## Tuto similaire
 
 `https://www.deviceplus.com/connect/integrate-rfid-module-raspberry-pi/`
-`
-http://espace-raspberry-francais.fr/Composants/Module-RFID-RC522-Raspberry-Francais/`
 
-https://www.teachmemicro.com/rfid-login-raspberry-pi/
+`http://espace-raspberry-francais.fr/Composants/Module-RFID-RC522-Raspberry-Francais/`
+
+`https://www.teachmemicro.com/rfid-login-raspberry-pi/`
