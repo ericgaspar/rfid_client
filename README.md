@@ -65,9 +65,7 @@ cd ~/RFID-RC522
 sudo python Ecriture.py
 ```
 
-Executer le programme python au branchement de la carte.
-
-Il faut que la base de donnée SQL puisse recevoir des connexion exterieure :
+Il faut que la base de donnée SQL puisse recevoir des connexions exterieures :
 Tuto à écrire.
 
 ## Améliorations à apporter
@@ -76,7 +74,7 @@ Tuto à écrire.
 - Écran LCD affichant le nom du propriétaire de la carte.
 - Lancer le script automatiquement au branchement de la carte.
 
-## Tuto similaire
+## Tutos similaires
 
 `https://www.deviceplus.com/connect/integrate-rfid-module-raspberry-pi/`
 
