@@ -24,6 +24,9 @@ Branchez le module RFID aux broches du Raspberry Pi comme ci-dessous.
 ```
 
 
+![](schematic.jpeg)
+
+
 ## Activer le bus SPI
 
 vérifier que SPI est actif
