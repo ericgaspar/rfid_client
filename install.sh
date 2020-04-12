@@ -22,10 +22,7 @@ locale-gen fr_FR.UTF-8
 dpkg-reconfigure locales
 
 # Update de Raspberry Pi
-apt-get update -y
-apt-get upgrade -y
-apt-get dist-upgrade -y
-rpi-update
+apt-get update -y && apt-get upgrade -y
 apt-get install -y git vim python3-pip acl
 pip3 install mysql.connector
 
